@@ -8,17 +8,17 @@
 
   <form id="input-values"><br>
       Angle:<br>
-      <input type="number" id="angle"/><br>
+      <input type="text" id="angle"/><br>
       Ball Diameter:<br>
-      <input type="number" id="ballDiameter"/><br><br>
+      <input type="text" id="ballDiameter"/><br><br>
     <button onClick="getValues(event)">Calculate</button>
   </form>
 
 <script>
   function getValues(event){
     event.preventDefault();
-    var angleValue = document.getElementById("angle").value;
-    var ballDiameterValue = document.getElementById("ballDiameter").value;
+    angleValue = document.getElementById("angle").value;
+    ballDiameterValue = document.getElementById("ballDiameter").value;
     angleValue = parseFloat(angleValue);
     ballDiameterValue = parseFloat(ballDiameterValue);
     console.log(micOverBall(angleValue,ballDiameterValue));
