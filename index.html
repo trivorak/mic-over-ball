@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+  Mic Over Ball Formula
+  <script src="./mob-formula.js"></script>
+
+  <form id="input-values"><br>
+      Angle:<br>
+      <input type="number" id="angle"/><br>
+      Ball Diameter:<br>
+      <input type="number" id="ballDiameter"/><br><br>
+    <button onClick="getValues(event)">Calculate</button>
+  </form>
+
+<script>
+  function getValues(event){
+    event.preventDefault();
+    var angleValue = document.getElementById("angle").value;
+    var ballDiameterValue = document.getElementById("ballDiameter").value;
+    angleValue = parseFloat(angleValue);
+    ballDiameterValue = parseFloat(ballDiameterValue);
+    console.log(micOverBall(angleValue,ballDiameterValue));
+    }
+</script>
+
+</body>
+</html>
