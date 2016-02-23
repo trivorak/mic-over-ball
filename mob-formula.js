@@ -13,8 +13,3 @@ function micOverBall (angle,ballDia) {
 function toRadians (degree) {    				// Converts Angles To Radians
 	return degree * (Math.PI / 180);
 }
-
-//var angle = prompt("What's your Angle? ")  		// Ask for angle (string)
-//angle = parseFloat(angle)						// Convert variable string to INT(float)
-
-//console.log(micOverBall(angle))
