@@ -4,5 +4,5 @@ const cotangent = require('../mob-formula.js');
 test('cotangent numbers', function(t) {
   t.plan(1);
 
-  t.equals(cotangent(5), 0.087488663525924);
+  t.equals(cotangent(5), 11.43005230278135);
 });
