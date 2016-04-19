@@ -1,0 +1,25 @@
+{
+  "name": "mob",
+  "version": "1.0.0",
+  "description": "A formula used to calculate the tangent of a ball against an angle using a [Mic Over Ball Gage](http://www.danco.com.sg/cameron.htm).",
+  "main": "mob-formula.js",
+  "scripts": {
+    "build": "mkdir -p dist && browserify mob-formula.js --standalone mobFunction> dist/bundle.js",
+    "test": "tape test.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trivorak/mic-over-ball.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trivorak/mic-over-ball/issues"
+  },
+  "homepage": "https://github.com/trivorak/mic-over-ball#readme",
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "tape": "^4.5.1"
+  }
+}

@@ -1,3 +1,8 @@
+module.exports = mobFunction;
+module.exports = cotangent;
+module.exports = toRadians;
+module.exports = micOverBall;
+
 //Mic Over Ball Forumla
 //(90-angle)/2 = output2
 //((cotangent(output2))+1)*balldia(.125 default at BL)
