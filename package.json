@@ -5,8 +5,8 @@
   "main": "mob-formula.js",
   "scripts": {
     "build": "mkdir -p dist && browserify mob-formula.js --standalone mobFunction> dist/bundle.js",
-    "test": "tape test.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tape test.js"
+
   },
   "repository": {
     "type": "git",
