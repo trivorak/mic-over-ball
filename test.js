@@ -1,10 +1,9 @@
 const test = require('tape');
-const cotangent = require('./mob-formula.js');
-const toRadians = require('./mob-formula.js');
 const micOverBall = require('./mob-formula.js');
 
-test('cotangent numbers', function(t) {
-  t.plan(1);
+test('micOverBall results', function(t) {
+  t.plan(2);
 
-  t.equals(cotangent(5), 11.43005230278135);
+  t.equals(micOverBall(1,1),2.0176);
+  t.equals(micOverBall(60,.125),0.5915);
 });
