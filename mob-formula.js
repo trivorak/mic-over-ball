@@ -12,7 +12,7 @@ function cotangent (degree) {
 }
 
 function micOverBall (angle,ballDia) {
-	return ((cotangent(toRadians(((90-angle)/2))))+1) * ballDia
+	return Math.round((((cotangent(toRadians(((90-angle)/2))))+1) * ballDia) * 10000) / 10000;
 }
 
 function toRadians (degree) {    				// Converts Angles To Radians
